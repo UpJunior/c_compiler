@@ -9,7 +9,7 @@ project (${PROJECT_NAME})
 
 set(CMAKE_CXX_FLAGS "-std=c++11 ${CMAKE_CXX_FLAGS} -O1 -ftime-trace")
 
-# set(CMAKE_MODULE_PATH "${CMAKE_SOURCE_DIR}/compile")
-# include(cotire)
+set(CMAKE_MODULE_PATH "${CMAKE_SOURCE_DIR}/compile")
+include(cotire)
 
 add_subdirectory(src)
